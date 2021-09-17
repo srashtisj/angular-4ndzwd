@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<select>
+  <option
+    *ngFor="let answer of answers; let i = index"
+    [value]="answer.name"
+    [selected]="i == 1"
+  >
+    {{ answer.name }}
+  </option>
+</select>
